@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>Online-Anamnesebogen · Praxis Dr. Mihai, Bösingen</title>
+<meta name="description" content="Füllen Sie Ihren Anamnesebogen bequem vor dem Termin online aus – spart Zeit im Wartezimmer. Sicher und verschlüsselt an die Zahnarztpraxis Dr. Mihai in Bösingen." />
+<meta name="robots" content="noindex, follow" />
+<meta name="theme-color" content="#1d4ed8" />
+<link rel="canonical" href="https://www.dr-mihai.de/anamnese.html" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:title" content="Online-Anamnesebogen · Praxis Dr. Mihai" />
+<meta property="og:description" content="Anamnesebogen bequem vor dem Termin online ausfüllen – spart Zeit." />
+<meta property="og:url" content="https://www.dr-mihai.de/anamnese.html" />
+
+<link rel="icon" type="image/svg+xml" href="assets/logo-dark.svg" />
+<link rel="apple-touch-icon" href="assets/logo-dark.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="dns-prefetch" href="https://formsubmit.co" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     TOPBAR
+============================================================= -->
+<header class="topbar">
+  <div class="shell topbar__inner">
+    <a href="index.html" class="topbar__logo" aria-label="Praxis Dr. Mihai – Startseite">
+      <img src="assets/logo-dark.svg" alt="Praxis Dr. Mihai" class="topbar__logo-mark" />
+    </a>
+    <nav class="topbar__nav" aria-label="Hauptnavigation">
+      <a href="index.html#leistungen">Leistungen</a>
+      <a href="index.html#ueber-uns">Über uns</a>
+      <a href="index.html#sprechzeiten">Sprechzeiten</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="karriere.html">Karriere</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <a href="index.html" class="btn btn--primary btn--sm topbar__cta">
+      Zur Startseite
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="topbar__mobile" id="topbarMobile">
+    <a href="index.html#leistungen">Leistungen</a>
+    <a href="index.html#ueber-uns">Über uns</a>
+    <a href="index.html#sprechzeiten">Sprechzeiten</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="karriere.html">Karriere</a>
+    <a href="index.html#kontakt">Kontakt</a>
+    <a href="index.html" class="btn btn--primary btn--block">Zur Startseite</a>
+  </div>
+</header>
+
+<main>
+
+<section class="section section--soft">
+  <div class="shell">
+    <div class="section-head">
+      <span class="eyebrow eyebrow--center eyebrow--dots">Online-Anamnesebogen</span>
+      <h2>Schon vor dem Termin ausgefüllt.</h2>
+      <p>Bitte füllen Sie Ihren Gesundheitsfragebogen bequem von zu Hause aus – das spart Ihnen Zeit im Wartezimmer und hilft uns, Sie optimal zu behandeln. Alle Angaben werden vertraulich behandelt.</p>
+    </div>
+
+    <form class="apply-form" id="anamneseForm"
+          action="https://formsubmit.co/info@dr-mihai.de"
+          method="POST" novalidate>
+      <input type="hidden" name="_subject" value="Neuer Online-Anamnesebogen – Praxis Dr. Mihai" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="true" />
+      <input type="hidden" name="_next" value="https://www.dr-mihai.de/anamnese.html?anamnese=ok" />
+
+      <!-- 1. Persönliche Daten -->
+      <div class="anam-section">
+        <h3 class="anam-section__title"><span class="anam-section__num">1</span> Persönliche Daten</h3>
+        <div class="apply-form__grid">
+          <label class="apply-form__field"><span>Name *</span>
+            <input type="text" name="Name" required autocomplete="name" />
+          </label>
+          <label class="apply-form__field"><span>Telefonnummer *</span>
+            <input type="tel" name="Telefonnummer" required autocomplete="tel" />
+          </label>
+          <label class="apply-form__field"><span>Geburtsdatum *</span>
+            <input type="date" name="Geburtsdatum" required />
+          </label>
+          <label class="apply-form__field"><span>E-Mail</span>
+            <input type="email" name="E-Mail" autocomplete="email" />
+          </label>
+          <label class="apply-form__field apply-form__field--full"><span>Adresse</span>
+            <input type="text" name="Adresse" autocomplete="street-address" placeholder="Straße, PLZ, Ort" />
+          </label>
+          <label class="apply-form__field"><span>Arbeitgeber</span>
+            <input type="text" name="Arbeitgeber" />
+          </label>
+          <label class="apply-form__field"><span>Hausarzt</span>
+            <input type="text" name="Hausarzt" placeholder="Name &amp; Ort" />
+          </label>
+        </div>
+      </div>
+
+      <!-- 2. Herz- und Kreislauferkrankungen -->
+      <div class="anam-section">
+        <h3 class="anam-section__title"><span class="anam-section__num">2</span> Herz- &amp; Kreislauferkrankungen</h3>
+        <p class="anam-hint">Bitte ankreuzen, was zutrifft.</p>
+        <div class="anam-checks">
+          <label><input type="checkbox" name="Herz_Kreislauf" value="Hoher Blutdruck" /> Hoher Blutdruck</label>
+          <label><input type="checkbox" name="Herz_Kreislauf" value="Niedriger Blutdruck" /> Niedriger Blutdruck</label>
+          <label><input type="checkbox" name="Herz_Kreislauf" value="Herzklappenfehler" /> Herzklappenfehler</label>
+          <label><input type="checkbox" name="Herz_Kreislauf" value="Herzschrittmacher" /> Herzschrittmacher</label>
+          <label><input type="checkbox" name="Herz_Kreislauf" value="Entzündung Herzklappen" /> Entzündung Herzklappen</label>
+          <label><input type="checkbox" name="Herz_Kreislauf" value="Herzoperation" /> Herzoperation</label>
+        </div>
+      </div>
+
+      <!-- 3. Infektiöse Erkrankungen -->
+      <div class="anam-section">
+        <h3 class="anam-section__title"><span class="anam-section__num">3</span> Infektiöse Erkrankungen</h3>
+        <div class="anam-checks">
+          <label><input type="checkbox" name="Infektion" value="HIV-Infektion" /> HIV-Infektion</label>
+          <label><input type="checkbox" name="Infektion" value="Hepatitis" /> Hepatitis</label>
+          <label><input type="checkbox" name="Infektion" value="Tuberkulose" /> Tuberkulose</label>
+          <label><input type="checkbox" name="Infektion" value="Andere Infektionskrankheit" /> Andere Infektionskrankheit</label>
+        </div>
+      </div>
+
+      <!-- 4. Weitere Erkrankungen -->
+      <div class="anam-section">
+        <h3 class="anam-section__title"><span class="anam-section__num">4</span> Weitere Erkrankungen</h3>
+        <div class="anam-checks">
+          <label><input type="checkbox" name="Weitere" value="Epilepsie" /> Epilepsie</label>
+          <label><input type="checkbox" name="Weitere" value="Asthma" /> Asthma</label>
+          <label><input type="checkbox" name="Weitere" value="Gerinnungsstörungen" /> Gerinnungsstörungen</label>
+          <label><input type="checkbox" name="Weitere" value="Diabetes" /> Diabetes</label>
+          <label><input type="checkbox" name="Weitere" value="Chemotherapie" /> Chemotherapie</label>
+          <label><input type="checkbox" name="Weitere" value="Strahlentherapie" /> Strahlentherapie</label>
+          <label><input type="checkbox" name="Weitere" value="Nierenerkrankung" /> Nierenerkrankung</label>
+          <label><input type="checkbox" name="Weitere" value="Ohnmachtsneigung" /> Ohnmachtsneigung</label>
+          <label><input type="checkbox" name="Weitere" value="Osteoporose" /> Osteoporose</label>
+          <label><input type="checkbox" name="Weitere" value="Raucher" /> Raucher</label>
+          <label><input type="checkbox" name="Weitere" value="Rheuma/Arthritis" /> Rheuma / Arthritis</label>
+          <label><input type="checkbox" name="Weitere" value="Schilddrüsenerkrankung" /> Schilddrüsenerkrankung</label>
+        </div>
+        <div class="apply-form__grid" style="margin-top:16px;">
+          <label class="apply-form__field apply-form__field--full"><span>Sonstige Erkrankungen</span>
+            <input type="text" name="Sonstige_Erkrankungen" placeholder="Falls oben nicht aufgeführt" />
+          </label>
+        </div>
+      </div>
+
+      <!-- 5. Schwangerschaft, Allergien, Medikamente -->
+      <div class="anam-section">
+        <h3 class="anam-section__title"><span class="anam-section__num">5</span> Schwangerschaft, Allergien &amp; Medikamente</h3>
+        <div class="apply-form__grid">
+          <label class="apply-form__field"><span>Besteht eine Schwangerschaft?</span>
+            <select name="Schwangerschaft">
+              <option value="">— Nicht zutreffend —</option>
+              <option>Nein</option>
+              <option>Ja</option>
+            </select>
+          </label>
+          <label class="apply-form__field"><span>Sind Allergien bekannt?</span>
+            <select name="Allergien_bekannt">
+              <option value="">— Bitte wählen —</option>
+              <option>Nein</option>
+              <option>Ja</option>
+            </select>
+          </label>
+          <label class="apply-form__field apply-form__field--full"><span>Wenn ja, welche Allergien?</span>
+            <input type="text" name="Allergien_welche" placeholder="z. B. Penicillin, Latex, Lokalanästhetika" />
+          </label>
+          <label class="apply-form__field apply-form__field--full"><span>Welche Medikamente nehmen Sie?</span>
+            <textarea name="Medikamente" rows="2" placeholder="z. B. Blutverdünner (Marcumar/ASS), Bisphosphonate, Schilddrüsen-Medikamente …"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <!-- 6. Recall + Röntgen -->
+      <div class="anam-section">
+        <h3 class="anam-section__title"><span class="anam-section__num">6</span> Recall &amp; Röntgen</h3>
+        <div class="apply-form__grid">
+          <label class="apply-form__field"><span>Teilnahme am Recall? <small style="font-weight:400;">(Erinnerung an den Kontrolltermin)</small></span>
+            <select name="Recall">
+              <option value="">— Bitte wählen —</option>
+              <option>Ja, gerne</option>
+              <option>Nein</option>
+            </select>
+          </label>
+          <label class="apply-form__field"><span>Einverständnis Röntgen?</span>
+            <select name="Roentgen">
+              <option value="">— Bitte wählen —</option>
+              <option>Ja, einverstanden</option>
+              <option>Nein</option>
+            </select>
+          </label>
+          <p class="anam-hint apply-form__field--full" style="margin-top:-4px;">
+            Je nach Kariesrisiko fertigen wir alle 2–5 Jahre ein Röntgenbild Ihrer Zähne an, um Karies und Parodontitis frühzeitig zu erkennen.
+          </p>
+        </div>
+      </div>
+
+      <!-- 7. Notfallkontakt -->
+      <div class="anam-section">
+        <h3 class="anam-section__title"><span class="anam-section__num">7</span> Notfallkontakt</h3>
+        <p class="anam-hint">Wen sollen wir im Notfall benachrichtigen?</p>
+        <div class="apply-form__grid">
+          <label class="apply-form__field"><span>Name</span>
+            <input type="text" name="Notfall_Name" autocomplete="off" />
+          </label>
+          <label class="apply-form__field"><span>Telefonnummer</span>
+            <input type="tel" name="Notfall_Telefon" autocomplete="off" />
+          </label>
+        </div>
+      </div>
+
+      <!-- 8. Einwilligung + Unterschrift -->
+      <div class="anam-section">
+        <h3 class="anam-section__title"><span class="anam-section__num">8</span> Einwilligung &amp; Unterschrift</h3>
+        <p class="anam-hint">
+          <strong>Datenschutzgrundverordnung (DSGVO):</strong>
+          Die Speicherung von Gesundheitsdaten erfolgt aus therapeutischen Gründen und zum Zweck der Erfüllung des Behandlungsvertrages.
+          Die Daten werden auch zur Abrechnung der erbrachten Leistungen mit dem Patienten und der Kassenzahnärztlichen Vereinigung
+          Baden-Württemberg (KZV BW) genutzt. Extern können die Daten mit Zustimmung des Patienten und den an der Behandlung beteiligten
+          Ärzten und Zahnärzten zur Verfügung gestellt werden, z. B. Kieferchirurg oder Kieferorthopäde.
+        </p>
+        <div class="apply-form__grid">
+          <label class="apply-form__consent">
+            <input type="checkbox" name="DSGVO_Einwilligung" required />
+            <span>Ich bin damit einverstanden, dass die Praxis zu diesen Zwecken personenbezogene Daten erhebt, speichert und verarbeitet. Ich kann jederzeit die gespeicherten Daten einsehen, erhalten und die Löschung verlangen. *</span>
+          </label>
+          <label class="apply-form__consent">
+            <input type="checkbox" name="Richtigkeit" required />
+            <span>Ich versichere, dass meine Angaben nach bestem Wissen vollständig und richtig sind. *</span>
+          </label>
+
+          <label class="apply-form__field"><span>Ort</span>
+            <input type="text" name="Ort" value="Bösingen" />
+          </label>
+          <label class="apply-form__field"><span>Datum</span>
+            <input type="date" name="Datum" />
+          </label>
+          <label class="apply-form__field apply-form__field--full"><span>Unterschrift <small style="font-weight:400;">(bitte vollständigen Namen eintippen)</small> *</span>
+            <input type="text" name="Unterschrift" required placeholder="Vor- und Nachname" />
+          </label>
+
+          <div class="apply-form__actions">
+            <button type="submit" class="btn btn--primary btn--lg">Anamnesebogen sicher absenden</button>
+            <button type="reset" class="btn btn--ghost btn--lg">Zurücksetzen</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="apply-form__done" id="anamneseDone" hidden>
+      <div class="apply-form__done-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5 9-11"/></svg>
+      </div>
+      <h3>Vielen Dank!</h3>
+      <p>Ihr Anamnesebogen ist bei uns eingegangen. Sie müssen vor Ort nichts mehr ausfüllen – wir freuen uns auf Ihren Termin.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================= -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="topbar__logo" aria-label="Praxis Dr. Mihai – Startseite">
+          <img src="assets/logo.svg" alt="" class="topbar__logo-mark" />
+          <span>
+            Dr. Mihai
+            <small>Zahnarztpraxis</small>
+          </span>
+        </a>
+        <p>
+          Moderne Zahnmedizin, persönliche Betreuung und schmerzfreie
+          Behandlungen – Ihre Zahnarztpraxis im Herzen von Bösingen.
+        </p>
+      </div>
+      <div>
+        <h4>Praxis</h4>
+        <ul>
+          <li><a href="index.html#leistungen">Leistungen</a></li>
+          <li><a href="index.html#ueber-uns">Über uns</a></li>
+          <li><a href="index.html#sprechzeiten">Sprechzeiten</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="karriere.html">Karriere</a></li>
+          <li><a href="anamnese.html">Anamnesebogen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>Zollernalbstr. 2</li>
+          <li>78662 Bösingen</li>
+          <li>Tel.: <a href="tel:+49740491166">07404 / 91166</a></li>
+          <li><a href="mailto:info@dr-mihai.de">info@dr-mihai.de</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="recht.html#impressum">Impressum</a></li>
+          <li><a href="recht.html#datenschutz">Datenschutz</a></li>
+          <li><a href="recht.html#cookies">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> Praxis Dr. Mihai · Alle Rechte vorbehalten.</span>
+      <span>Webseite gepflegt durch <a href="https://laendle-digital.com/">Ländle Digital</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  var burger = document.getElementById("burger");
+  var mobile = document.getElementById("topbarMobile");
+  if (burger && mobile) burger.addEventListener("click", function () {
+    var open = mobile.classList.toggle("is-open");
+    burger.classList.toggle("is-open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  // Heutiges Datum im Unterschrift-Block vorbelegen
+  (function () {
+    var d = new Date();
+    var iso = d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+    var datum = document.querySelector('input[name="Datum"]');
+    if (datum && !datum.value) datum.value = iso;
+  })();
+
+  // Unterschrift = Name automatisch vorschlagen, wenn Name gesetzt
+  (function () {
+    var name = document.querySelector('input[name="Name"]');
+    var sig = document.querySelector('input[name="Unterschrift"]');
+    if (!name || !sig) return;
+    name.addEventListener("blur", function () {
+      if (sig.value.trim()) return;
+      if (name.value.trim()) sig.value = name.value.trim();
+    });
+  })();
+
+  // Erfolgsseite nach Redirect (?anamnese=ok)
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get("anamnese") === "ok") {
+      var form = document.getElementById("anamneseForm");
+      var done = document.getElementById("anamneseDone");
+      if (form) form.hidden = true;
+      if (done) { done.hidden = false; done.scrollIntoView({ behavior: "smooth" }); }
+    }
+  })();
+</script>
+
+</body>
+</html>

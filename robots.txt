@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /recht.html
+
+Sitemap: https://www.dr-mihai.de/sitemap.xml
