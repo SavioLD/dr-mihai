@@ -797,11 +797,25 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .info-block .hours-row {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
   padding: 8px 0;
   border-bottom: 1px dashed var(--border);
 }
 .info-block .hours-row:last-child { border: 0; }
-.info-block .hours-row span:last-child { color: var(--text); font-weight: 500; }
+.info-block .hours-row span:first-child { flex-shrink: 0; }
+.info-block .hours-row span:last-child { color: var(--text); font-weight: 500; text-align: right; }
+
+/* Mobil: Tag + Uhrzeit untereinander, beide linksbündig (Zeiten sind zu lang für 2 Spalten) */
+@media (max-width: 600px) {
+  .info-block .hours-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 10px 0;
+  }
+  .info-block .hours-row span:last-child { text-align: left; }
+}
 
 .map-wrap {
   border-radius: var(--radius-lg);
@@ -3489,4 +3503,97 @@ img, svg, video { max-width: 100%; height: auto; }
   display: block;
   border-radius: 50%;
   box-shadow: 0 8px 20px -6px rgba(29, 78, 216, .42);
+}
+
+/* ==========================================================================
+   ORTSBILDER BÖSINGEN – Foto-Hero + Hintergrund-Bänder
+   Bilder liegen im Repo-Root neben der style.css: ort-1.jpg / ort-2.jpg / ort-3.jpg
+   ========================================================================== */
+
+/* --- HERO mit Ortsbild als Hintergrund --------------------------------- */
+.hero {
+  background:
+    linear-gradient(90deg, rgba(15,23,42,.78) 0%, rgba(15,23,42,.42) 48%, rgba(29,78,216,.30) 100%),
+    linear-gradient(0deg, rgba(15,23,42,.35), rgba(15,23,42,0) 55%),
+    url("ort-1.jpg") center 40% / cover no-repeat,
+    var(--primary-deep) !important;
+  color: #fff;
+}
+.hero::before, .hero::after { display: none !important; }  /* Deko-Punkte weg – Foto übernimmt */
+
+.hero .eyebrow { color: #fff !important; }
+.hero h1 { color: #fff; }
+.hero h1 em { color: #bfdbfe; }
+.hero__sub { color: rgba(255,255,255,.92) !important; }
+
+.hero__trust { border-top-color: rgba(255,255,255,.28) !important; }
+.hero__trust li { color: rgba(255,255,255,.94); }
+.hero__trust svg { color: #fff; background: rgba(255,255,255,.20); }
+
+/* Sekundärer Button auf dem Foto lesbar machen */
+.hero .btn--ghost { color: #fff; border-color: rgba(255,255,255,.6); background: transparent; }
+.hero .btn--ghost:hover { background: rgba(255,255,255,.16); border-color: #fff; }
+
+/* Sprechzeiten-Karte als „frosted glass" über dem Foto */
+.hero-card {
+  background: rgba(255,255,255,.94) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 24px 60px -20px rgba(15,23,42,.5);
+}
+
+/* --- REGIONAL-BAND (Ortsbild vollflächig, mittig) ---------------------- */
+.region-band {
+  position: relative;
+  padding: clamp(72px, 11vw, 132px) 0;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(15,23,42,.55) 0%, rgba(29,78,216,.55) 100%),
+    url("ort-2.jpg") center 45% / cover no-repeat,
+    var(--primary-deep);
+}
+.region-band__inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; padding-inline: var(--gutter); }
+.region-band__eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: #fff; opacity: .9; margin-bottom: 14px;
+}
+.region-band__eyebrow::before {
+  content: ""; width: 28px; height: 6px;
+  background-image: radial-gradient(#fff 1px, transparent 1.4px);
+  background-size: 7px 6px;
+}
+.region-band h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.15; color: #fff; margin: 0 0 12px;
+}
+.region-band p {
+  font-size: clamp(16px, 1.6vw, 18px);
+  line-height: 1.65; color: rgba(255,255,255,.92); margin: 0;
+}
+/* Parallax nur auf Desktop – auf iOS/Mobile ruckelt background-attachment:fixed */
+@media (min-width: 900px) and (hover: hover) {
+  .region-band { background-attachment: fixed, fixed, scroll; }
+}
+
+/* --- FINAL-CTA (#kontakt) mit Ortsbild hinter dem Blau ------------------ */
+#kontakt .cta-banner {
+  background:
+    linear-gradient(135deg, rgba(37,99,235,.90) 0%, rgba(30,58,138,.92) 100%),
+    url("ort-3.jpg") center / cover no-repeat,
+    var(--primary-deep);
+}
+
+/* Mobil: Hero-Foto etwas dunkler, damit Text auf jedem Bildausschnitt sitzt */
+@media (max-width: 720px) {
+  .hero {
+    background:
+      linear-gradient(180deg, rgba(15,23,42,.72) 0%, rgba(29,78,216,.55) 100%),
+      url("ort-1.jpg") center / cover no-repeat,
+      var(--primary-deep) !important;
+  }
+  .region-band { padding: 56px 0; }
 }
