@@ -3651,6 +3651,19 @@ img, svg, video { max-width: 100%; height: auto; }
   object-fit: cover;
   object-position: center top;
 }
+/* Platzhalter, wenn (noch) kein Foto vorhanden ist */
+.team-card__placeholder {
+  aspect-ratio: 4 / 5;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--primary-soft), #e0f2fe);
+}
+.team-card__placeholder span {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 6vw, 46px);
+  letter-spacing: .02em;
+  color: rgba(29, 78, 216, .45);
+}
 .team-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
@@ -3682,10 +3695,29 @@ img, svg, video { max-width: 100%; height: auto; }
   color: var(--text-muted);
 }
 
+/* Lange Wörter sauber umbrechen (z. B. „Fachangestellte") statt überlaufen */
+.team-card__name,
+.team-card__role,
+.team-card__desc {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 @media (max-width: 900px) {
   .team-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 560px) {
   .team-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .team-card__name { font-size: 15px; }
+  .team-card figcaption { padding: 11px 12px 14px; }
+  .team-card__name { font-size: 14px; line-height: 1.25; }
+  .team-card__role {
+    font-size: 10px;
+    letter-spacing: .02em;
+    line-height: 1.35;
+    margin-top: 4px;
+  }
+  .team-card__desc { font-size: 12px; line-height: 1.45; margin-top: 7px; }
+}
+@media (max-width: 380px) {
+  .team-grid { grid-template-columns: 1fr; }   /* sehr schmale Handys: 1 Spalte, volle Lesbarkeit */
 }
