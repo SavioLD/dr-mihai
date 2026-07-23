@@ -3695,8 +3695,14 @@ img, svg, video { max-width: 100%; height: auto; }
   color: var(--text-muted);
 }
 
-/* Lange Wörter sauber umbrechen (z. B. „Fachangestellte") statt überlaufen */
-.team-card__name,
+/* Namen NICHT trennen (kein „Brog-hammer"), nur zwischen Vor-/Nachname umbrechen */
+.team-card__name {
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  text-wrap: balance;   /* gleichmäßiger Zeilenumbruch bei 2-zeiligen Namen */
+}
+/* Funktion/Beschreibung dürfen bei langen Wörtern umbrechen */
 .team-card__role,
 .team-card__desc {
   overflow-wrap: break-word;
@@ -3708,16 +3714,21 @@ img, svg, video { max-width: 100%; height: auto; }
 }
 @media (max-width: 560px) {
   .team-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .team-card figcaption { padding: 11px 12px 14px; }
-  .team-card__name { font-size: 14px; line-height: 1.25; }
+  .team-card figcaption { padding: 12px 12px 15px; }
+  .team-card__name {
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
   .team-card__role {
     font-size: 10px;
     letter-spacing: .02em;
     line-height: 1.35;
-    margin-top: 4px;
+    margin-top: 5px;
   }
   .team-card__desc { font-size: 12px; line-height: 1.45; margin-top: 7px; }
 }
 @media (max-width: 380px) {
   .team-grid { grid-template-columns: 1fr; }   /* sehr schmale Handys: 1 Spalte, volle Lesbarkeit */
+  .team-card__name { font-size: 17px; }
 }
