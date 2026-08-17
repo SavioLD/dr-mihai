@@ -33,14 +33,17 @@
 <meta property="og:url" content="https://www.dr-mihai.de/" />
 <meta property="og:image" content="https://www.dr-mihai.de/og-image.jpg" />
 <meta property="og:image:alt" content="Zahnarztpraxis Dr. Mihai in Bösingen" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="1000" />
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Zahnarzt Bösingen · Praxis Dr. Mihai" />
 <meta name="twitter:description" content="Sanfte Zahnmedizin in Bösingen. Termin online anfragen." />
 <meta name="twitter:image" content="https://www.dr-mihai.de/og-image.jpg" />
+
+<!-- Primäres Seitenbild (für Suchmaschinen-Vorschau) -->
+<link rel="image_src" href="https://www.dr-mihai.de/og-image.jpg" />
 
 <!-- Icons -->
 <link rel="icon" type="image/svg+xml" href="logo-dark.svg" />
@@ -63,7 +66,14 @@
   "alternateName": "Praxis Dr. Mihai",
   "url": "https://www.dr-mihai.de/",
   "logo": "https://www.dr-mihai.de/logo.svg",
-  "image": "https://www.dr-mihai.de/og-image.jpg",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.dr-mihai.de/og-image.jpg",
+    "width": 800,
+    "height": 1000,
+    "caption": "Dr. med. stom. Dragoș-Gabriel Mihai – Zahnarztpraxis Dr. Mihai, Bösingen"
+  },
+  "primaryImageOfPage": "https://www.dr-mihai.de/og-image.jpg",
   "description": "Zahnarztpraxis Dr. Mihai in Bösingen – moderne Zahnmedizin von Prophylaxe und Implantaten bis Kinderzahnheilkunde und Angstpatienten-Betreuung.",
   "telephone": "+49 7404 91166",
   "email": "info@dr-mihai.de",
@@ -171,6 +181,19 @@
 </script>
 </head>
 <body>
+
+<!-- ============================================================
+     SCHLIESSUNGS-HINWEIS (Renovierung)
+============================================================= -->
+<div class="closure-note" role="status">
+  <div class="shell closure-note__inner">
+    <svg class="closure-note__icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+    <p class="closure-note__text">
+      <strong>Wegen Renovierung geschlossen.</strong>
+      Unsere Praxis bleibt vom <strong>17.08.</strong> bis voraussichtlich <strong>31.08., 14:00&nbsp;Uhr</strong> geschlossen. Ab dem 31.08. sind wir wieder wie gewohnt für Sie da. In dringenden Notfällen wenden Sie sich bitte an den zahnärztlichen Notdienst.
+    </p>
+  </div>
+</div>
 
 <!-- ============================================================
      TOPBAR
@@ -440,7 +463,7 @@
     <div class="services">
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon1_Kinderzahnheilkunde.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon1_Kinderzahnheilkunde.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>Kinderzahnheilkunde</h3>
         <p>Spezielles Fachgebiet für die Versorgung von Kindern und Jugendlichen – von Prävention über Früherkennung bis zur Behandlung. Mit kindgerechter Betreuung und behutsamem Angstabbau.</p>
@@ -448,7 +471,7 @@
 
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon2_Prophylaxe.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon2_Prophylaxe.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>Prophylaxe</h3>
         <p>Vorbeugung von Zahnerkrankungen durch professionelle Zahnreinigung, Fluoridierung, Fissurenversiegelung, Ernährungsberatung und individuelle Mundhygiene­instruktion.</p>
@@ -456,7 +479,7 @@
 
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon3_Parodontologie-2.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon3_Parodontologie-2.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>Parodontologie</h3>
         <p>Diagnose und Behandlung von Zahnfleisch- und Zahnhalteapparat­erkrankungen (z. B. Gingivitis, Parodontitis). Ziel ist der dauerhafte Zahnerhalt und Ihre allgemeine Gesundheit.</p>
@@ -464,7 +487,7 @@
 
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon4_Fullungstherapie.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon4_Fullungstherapie.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>Füllungstherapie</h3>
         <p>Behandlung von Zahndefekten durch moderne, substanzschonende Füllungen aus Komposit, Keramik oder hochwertigen Zementen – ästhetisch und langlebig.</p>
@@ -472,7 +495,7 @@
 
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon5_Endodontie.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon5_Endodontie.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>Endodontie</h3>
         <p>Erhaltung stark geschädigter Zähne durch Wurzelkanal­behandlung. Moderne Techniken und mikroskopische Präzision sichern hohe Erfolgsraten.</p>
@@ -480,7 +503,7 @@
 
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon6_Chirurgische.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon6_Chirurgische.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>Chirurgische Behandlungen</h3>
         <p>Ambulante Eingriffe wie Zahnextraktionen bei nicht erhaltungs­fähigen Zähnen – professionell, schonend und in entspannter Atmosphäre.</p>
@@ -488,7 +511,7 @@
 
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon7_Prothetik.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon7_Prothetik.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>Prothetik &amp; Zahnersatz</h3>
         <p>Ersatz fehlender Zähne mit Kronen, Brücken und Implantaten. Ziel sind volle Funktion, natürliche Ästhetik und mehr Lebensqualität – passend zu Ihrem Lächeln.</p>
@@ -496,7 +519,7 @@
 
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon8_Angstpatienten.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon8_Angstpatienten.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>Angstpatienten</h3>
         <p>Spezielle Betreuung durch einfühlsame Kommunikation, beruhigende Methoden oder Sedierung – für entspannte und stressfreie Zahnarztbesuche.</p>
@@ -504,7 +527,7 @@
 
       <article class="service-card">
         <div class="service-card__icon service-card__icon--badge">
-          <img src="Icon9_CMD.svg" alt="" width="56" height="56" loading="lazy" />
+          <img src="icons/Icon9_CMD.svg" alt="" width="56" height="56" loading="lazy" />
         </div>
         <h3>CMD &amp; Kiefergelenk</h3>
         <p>Behandlung von Kiefergelenks- und Kaumuskelstörungen (CMD) – mit Schienentherapie, Physiotherapie und entspannungs­fördernden Verfahren.</p>
@@ -910,7 +933,7 @@
     </div>
     <div class="footer__bottom">
       <span>© <span id="year">2026</span> Praxis Dr. Mihai · Alle Rechte vorbehalten.</span>
-      <span>Webseite gepflegt durch <a href="https://laendle-digital.com/">Ländle Digital</a></span>
+      <span>Webseite gepflegt durch <a href="../../index.html">Ländle Digital</a></span>
     </div>
   </div>
 </footer>

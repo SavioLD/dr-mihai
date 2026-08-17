@@ -3732,3 +3732,33 @@ img, svg, video { max-width: 100%; height: auto; }
   .team-grid { grid-template-columns: 1fr; }   /* sehr schmale Handys: 1 Spalte, volle Lesbarkeit */
   .team-card__name { font-size: 17px; }
 }
+
+/* ============================================================
+   SCHLIESSUNGS-HINWEIS (Renovierung)
+============================================================= */
+.closure-note {
+  background: #fef3c7;
+  color: #7c2d12;
+  border-bottom: 1px solid #fcd34d;
+}
+.closure-note__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 0;
+}
+.closure-note__icon {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: #b45309;
+}
+.closure-note__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.45;
+}
+.closure-note__text strong { color: #7c2d12; }
+@media (max-width: 560px) {
+  .closure-note__text { font-size: 13.5px; line-height: 1.4; }
+  .closure-note__inner { padding: 10px 0; gap: 8px; }
+}
